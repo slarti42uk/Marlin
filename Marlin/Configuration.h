@@ -388,7 +388,7 @@
   #define  DEFAULT_Kp 21.70
   #define  DEFAULT_Ki 1.60
   #define  DEFAULT_Kd 73.76
-  
+
   // MakerGear
   //#define DEFAULT_Kp 7.0
   //#define DEFAULT_Ki 0.1
@@ -620,7 +620,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 200, 200, 12, 120 }
+#define DEFAULT_MAX_FEEDRATE          { 100, 100, 2, 120 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -628,7 +628,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 200, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 1000, 500, 200, 5000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -650,9 +650,9 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 10.0
-#define DEFAULT_YJERK                 10.0
-#define DEFAULT_ZJERK                  0.4
+#define DEFAULT_XJERK                 6.0
+#define DEFAULT_YJERK                 6.0
+#define DEFAULT_ZJERK                  0.2
 #define DEFAULT_EJERK                  2.5
 
 /**
